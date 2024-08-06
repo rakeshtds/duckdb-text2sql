@@ -208,6 +208,7 @@ def main():
     if user_question:
         # Generate the full prompt for the AI
         print(user_question)
+        print(base_prompt)
         full_prompt = base_prompt.format(user_question=user_question)
         print(1+34)
         print(full_prompt)
