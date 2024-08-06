@@ -178,7 +178,6 @@ def main():
     groq_api_key = st.secrets["GROQ_API_KEY"]
     client = Groq(
         api_key=groq_api_key,
-        base_url=st.secrets["GROQ_BASE_URL"]
     )
 
     # Set up the Streamlit interface
