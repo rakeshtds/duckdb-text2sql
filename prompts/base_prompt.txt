@@ -7,6 +7,21 @@ Name (STRING): The full name of the lenders.Min_range (INTEGER):	Minimum loan pr
 Max_range (INTEGER):	Maximum loan product offer from lender.
 Interest_rate (FLOAT):	Lowest possible interest offered with this lender.
 Period (INTEGER): Integer number of time periods over which loan may be repayed.
+Provinces (STRING[]): JSON array of provinces for which this product will be available
+Employment(STRING[]):	JSON array of employment statuses for which this product will be available
+Monthly_income (FLOAT):	Minimum annual income for which this product will be available
+Residency_reqd (STRING[]): Citizenship or Residency types for which this product will be available
+Housing_status (STRING[]): Ownership, rental or shared accommodation, or other type of housing for which product will be available
+Lender_id	(INTEGER): Loanconnect ID this product’s lender
+Credit_type (STRING[]):Descriptive self-rated credit types for which product will be available, e.g. Excellent, Poor
+Debt_percentage (INTEGER):	Maximum debt to income ratio for which product will be available
+Status (STRING):	Whether this loan product is availble publicly. When Active then available
+Type_id (STRING[]):	Loan purposes for which this product is available. E.g. Home Improvement
+Product_type (STRING):	Description of this loan product type E.g. Unsecured Loan
+Interest_rate1 (FLOAT): Highest possible interest offered with this product
+Language_csv (STRING):	Language for which this offer applies
+Preapproved	(INTEGER): Flag for indicating whether this loan product should display as preapproved
+Company (STRING):	Company name/ID of this product’s lender
 
 
 Given a user's question about this data, write a valid DuckDB SQL query that accurately extracts or calculates the requested information from these tables and adheres to SQL best practices for DuckDB, optimizing for readability and performance where applicable.
