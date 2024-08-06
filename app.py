@@ -207,6 +207,7 @@ def main():
     # If the user has asked a question, process it
     if user_question:
         # Generate the full prompt for the AI
+        print(user_question)
         full_prompt = base_prompt.format(user_question=user_question)
         
         # Get the AI's response
