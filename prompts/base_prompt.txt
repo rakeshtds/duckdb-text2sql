@@ -6,7 +6,8 @@ Id (INTEGER): A unique identifier for each lenders.
 Name (STRING): The full name of the lenders.Min_range (INTEGER):	Minimum loan product offer
 Max_range (INTEGER):	Maximum loan product offer from lender.
 Interest_rate (FLOAT):	Lowest possible interest offered with this lender.
-Period (INTEGER): Integer number of time periods over which loan may be repayed. When repayment_type {null, 0, 1} then months; {2} then days.
+Period (INTEGER): Integer number of time periods over which loan may be repayed.
+
 
 Given a user's question about this data, write a valid DuckDB SQL query that accurately extracts or calculates the requested information from these tables and adheres to SQL best practices for DuckDB, optimizing for readability and performance where applicable.
 
