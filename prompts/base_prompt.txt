@@ -14,6 +14,30 @@ employee_id (INTEGER): References the employee_id from the employees table, indi
 amount (FLOAT): The monetary value of the purchase.
 product_name (STRING): The name of the product purchased
 
+Table: AssetDirect.csv
+Columns:
+Id (INTEGER): Loanconnect product ID
+Name (STRING): Descriptive name of product
+Min_range (INTEGER):	Minimum loan product offer
+Max_range (INTEGER):	Maximum loan product offer
+Interest_rate (FLOAT):	Lowest possible interest offered with this product
+Period (INTEGER): Integer number of time periods over which loan may be repayed. When repayment_type {null, 0, 1} then months; {2} then days. 
+Provinces (STRING[]): JSON array of provinces for which this product will be available
+Employment(STRING[]):	JSON array of employment statuses for which this product will be available
+Monthly_income (FLOAT):	Minimum annual income for which this product will be available
+Residency_reqd (STRING[]): Citizenship or Residency types for which this product will be available
+Housing_status (STRING[]): Ownership, rental or shared accommodation, or other type of housing for which product will be available
+Lender_id	(INTEGER): Loanconnect ID this product’s lender
+Credit_type (STRING[]):Descriptive self-rated credit types for which product will be available, e.g. Excellent, Poor
+Debt_percentage (INTEGER):	Maximum debt to income ratio for which product will be available
+Status (STRING):	Whether this loan product is availble publicly. When Active then available
+Type_id (STRING[]):	Loan purposes for which this product is available. E.g. Home Improvement
+Product_type (STRING):	Description of this loan product type E.g. Unsecured Loan
+Interest_rate1 (FLOAT): Highest possible interest offered with this product
+Language_csv (STRING):	Language for which this offer applies
+Preapproved	(INTEGER): Flag for indicating whether this loan product should display as preapproved
+Company (STRING):	Company name/ID of this product’s lender
+
 Given a user's question about this data, write a valid DuckDB SQL query that accurately extracts or calculates the requested information from these tables and adheres to SQL best practices for DuckDB, optimizing for readability and performance where applicable.
 
 Here are some tips for writing DuckDB queries:
