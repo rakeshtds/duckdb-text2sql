@@ -209,6 +209,8 @@ def main():
         # Generate the full prompt for the AI
         print(user_question)
         full_prompt = base_prompt.format(user_question=user_question)
+        print(1+34)
+        print(full_prompt)
         
         # Get the AI's response
         llm_response = chat_with_groq(client,full_prompt,model)
