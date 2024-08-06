@@ -14,14 +14,7 @@ employee_id (INTEGER): References the employee_id from the employees table, indi
 amount (FLOAT): The monetary value of the purchase.
 product_name (STRING): The name of the product purchased
 
-Table: lenders.csv
-Columns:
-Id (INTEGER): Loanconnect product ID
-Name (STRING): Descriptive name of product
-Min_range (INTEGER):	Minimum loan product offer
-Max_range (INTEGER):	Maximum loan product offer
-Interest_rate (FLOAT):	Lowest possible interest offered with this product
-Period (INTEGER): Integer number of time periods over which loan may be repayed. When repayment_type {null, 0, 1} then months; {2} then days. 
+
 
 
 Given a user's question about this data, write a valid DuckDB SQL query that accurately extracts or calculates the requested information from these tables and adheres to SQL best practices for DuckDB, optimizing for readability and performance where applicable.
