@@ -183,7 +183,7 @@ def main():
     # Set up the Streamlit interface
     spacer, col = st.columns([5, 1])  
     with col:  
-        st.image('groqcloud_darkmode.png')
+        st.image('groqcloud_darkmode1.png')
 
     st.title("CSV Query Generator")
     st.write('Welcome! Feel free to ask questions about the data contained in the `csv` files. You might ask about specific employee details or inquire about purchase records. For example, you could ask "Descriptive name of product?" or "Citizenship or Residency types for which this product will be available?". The application matches your question to SQL queries to provide accurate and relevant results. Enjoy exploring the data!')
